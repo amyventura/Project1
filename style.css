@@ -1,19 +1,15 @@
+body {
+  background-color: rgb(212, 209, 207)
+}
+
+
 .equal {
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
-    padding: 3px;
+    padding: 10px;
   }
 
-  .food5 {
-    transition: filter .5s ease-in-out;
-    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-    filter: grayscale(0%); /* FF 35+ */
-  }
-  .food5:hover {
-    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-    filter: grayscale(100%); /* FF 35+ */
-  }
   /* Style the search field */
 .example input[type=text] {
     padding: 10px;
@@ -53,3 +49,57 @@ width: 100rem;
 height: 10rem;
 color: white;
   }
+  h1 {
+    margin-bottom: ;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    background-color: rgb(155, 52, 53);
+    border-radius: 15px 15px 0px 0px;
+}
+
+p.lead {
+  margin: 0;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    background-color: rgb(83, 49, 67);
+}
+
+
+.overlay-div {
+  
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+}
+  
+.navagation-button {
+  position: relative;
+}
+
+
+  img {
+    float: left;
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%) !important;
+	filter: grayscale(100%) !important;
+  
+}
+
+.navigation-hover {-webkit-filter: none !important;
+	filter: none !important;
+}
+
+.fixed-footer{
+  bottom: 0;
+  background-color: rgb(139, 122, 70); 
+  text-align: center;
+  color: white;
+  border-radius: 0px 0px 15px 15px;
+}
