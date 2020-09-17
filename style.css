@@ -47,6 +47,13 @@ body {
 background-image: url(/Project1/src/food3.jpg);
 width: 100rem;
 height: 10rem;
+<<<<<<< HEAD
+color: black;
+  }
+  .resultrecipe{
+      color: black;
+  }
+=======
 color: white;
   }
   h1 {
@@ -103,3 +110,4 @@ p.lead {
   color: white;
   border-radius: 0px 0px 15px 15px;
 }
+>>>>>>> master
