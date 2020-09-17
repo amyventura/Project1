@@ -1,0 +1,49 @@
+header {
+    background-color: rgb(233, 147, 66);
+    /* background-color: rgb(238, 186, 81);
+    background-color: rgb(72, 135, 138);
+    background-color: rgb(59, 110, 81); 
+     background-color: rgb(36, 48, 54); */
+    
+    
+} 
+
+header h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+html, body {
+    margin: 10;
+    padding: 10;
+}
+
+div.card-header{
+    background-color: rgb(59, 110, 81); 
+    color: white;
+    margin-top: 1%;
+}
+
+a.btn-primary{
+    background-color: rgb(72, 135, 138);
+}
+
+header h5 {
+    color:rgb(36, 48, 54);
+
+}
+
+p.card-text {
+    
+    color:rgb(36, 48, 54);
+    
+}
+
+div.card-footer {
+
+    background-color: rgb(238, 186, 81);
+
+}
+
