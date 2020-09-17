@@ -51,5 +51,8 @@
 background-image: url(/Project1/src/food3.jpg);
 width: 100rem;
 height: 10rem;
-color: white;
+color: black;
+  }
+  .resultrecipe{
+      color: black;
   }
