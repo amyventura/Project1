@@ -14,3 +14,42 @@
     -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
     filter: grayscale(100%); /* FF 35+ */
   }
+  /* Style the search field */
+.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  .example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  .example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .search-div{
+background-image: url(/Project1/src/food3.jpg);
+width: 100rem;
+height: 10rem;
+color: white;
+  }
