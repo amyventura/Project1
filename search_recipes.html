@@ -30,45 +30,47 @@
 </head>
 
 <body>
-    <ul class="nav nav-tabs justify-content-end">
-
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="/search_recipes.html">Recipe Search</a>
-                <a class="dropdown-item" href="/video_page.html">Recipe Video Search</a>
-                <a class="dropdown-item" href="#">Favorite Recipes</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/shopping_list.html">Shopping List</a>
-            </div>
-        </li>
-
-
-    </ul>
-    <div class = "container search-div">
     <div class="container">
-        
-        <div class="container">
-            <h1 class="display-4">Search Your Recipe!</h1>
-            <p class="lead">Search For A Recipe Below!</p>
-            <div class="example">
-                <input type="text" placeholder="Search.." name="search" class = "searchInput">
-                <button type="submit"><i class="fa fa-search recipe-search-button"></i></button>
+        <ul class="nav nav-tabs justify-content-end">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/search_recipes.html">Recipe Search</a>
+                    <a class="dropdown-item" href="/video_page.html">Recipe Video Search</a>
+                    <a class="dropdown-item" href="#">Favorite Recipes</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/shopping_list.html">Shopping List</a>
+                </div>
+            </li>
+
+
+        </ul>
+        <div class="container search-div">
+            <div class="container">
+
+                <div class="container">
+                    <h1 class="display-4">Search Your Recipe!</h1>
+                    <p class="lead">Search For A Recipe Below!</p>
+                    <div class="example">
+                        <input type="text" placeholder="Search.." name="search" class="searchInput">
+                        <button type="submit"><i class="fa fa-search recipe-search-button"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-search-results">
+
+
+
+            </div>
+            <div class="fixed-footer fixed-bottom">
+                <div class="container">Copyright &copy; 2020 Recipe Rolodex</div>
+            </div>
         </div>
-    </div>
-</div>
 
-<div class="recipe-search-results">
-
-
-
-</div>
-<div class="fixed-footer fixed-bottom">
-    <div class="container">Copyright &copy; 2020 Recipe Rolodex</div>
-</div>
-
-<script src="recipesearch.js"></script>
+        <script src="recipesearch.js"></script>
 
 </body>
 
