@@ -6,30 +6,37 @@
     <!-- bootstrap styling -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"> -->
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
     <title>Recipe Video Search</title>
+
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <ul class="nav nav-tabs justify-content-end">
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                     aria-expanded="false">Dropdown</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Recipe Search</a>
-                    <a class="dropdown-item" href="#">Recipe Video Search</a>
+                    <a class="dropdown-item" href="/new_recipes.html">Recipe Search</a>
+                    <a class="dropdown-item" href="/video_page.html">Recipe Video Search</a>
                     <a class="dropdown-item" href="#">Favorite Recipes</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Shopping List</a>
+                    <a class="dropdown-item" href="/shopping_list.html">Shopping List</a>
                 </div>
             </li>
         </ul>
@@ -53,8 +60,14 @@
         </div>
         
     </div>
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- footer -->
+    <div class="fixed-footer fixed-bottom">
+        <div class="container">Copyright &copy; 2020 Recipe Rolodex</div>
+    </div>
+    
+    
+    <!-- Javascript file for video page -->
     <script type="text/javascript" src="video_page.js"></script>
 </body>
 </html>
