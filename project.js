@@ -25,7 +25,7 @@ $(".favorite-recipe-list").on("click", function (){
 
 
 $(".recipe-search").on("click", function (){
-    window.location.href = 'new_recipes.html';
+    window.location.href = 'search_recipes.html';
 })
 
 

@@ -26,6 +26,8 @@ function searchRecipe(recipe) {
             $(".searchrec").append($("<p class = card-text recipeinstructions>" + "Reecipe Instructions :" +  response.meals[recipes].strInstructions + "</div>"))
             $(".searchrec").append($("<p class = card-text recipesource>" + "Link to Recipe :" +  response.meals[recipes].strSource + "</div>"))
             $(".searchrec").append($("<p class = card-textt recipevideo>" + "Recipe Video :" +  response.meals[recipes].strYoutube + "</div>"))
+            $(".searchrec").append($("<button type='button' class = card-textt recipevideo>" + "Save Recipe to Favorites" + "</button>"))
+ 
         }
     });
 
