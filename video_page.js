@@ -13,6 +13,8 @@ $(document).ready(function() {
 
     function videoSearch(key, search, maxResults) {
 
+        $("#videos").empty();
+
         $.ajax({
             url: "https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=" + maxResults + "&q=" + search,
             method: "GET",
