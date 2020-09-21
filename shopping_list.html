@@ -5,21 +5,65 @@
   <title>
     Shopping List
   </title>
+  <!-- bootstrap styling -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- bootstrap js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="shop-list.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   <script src="shoppinglist.js"></script>
 </head>
 
 <body>
-  <!-- [SHOPPING LIST] -->
-  <h1>SHOPPING LIST</h1>
-  <div id="shop-list"></div>
+  <div class="container">
+    <ul class="nav nav-tabs justify-content-end">
 
-  <!-- [ADD NEW ITEM] -->
-  <h1>ADD ITEM</h1>
-  <form id="shop-add">
-    <input type="text" id="add-item" placeholder="New Item" required value="" />
-    <input type="submit" value="Add Item" />
-  </form>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/search_recipes.html">Recipe Search</a>
+          <a class="dropdown-item" href="/video_page.html">Recipe Video Search</a>
+          <a class="dropdown-item" href="#">Favorite Recipes</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/shopping_list.html">Shopping List</a>
+        </div>
+      </li>
+
+
+    </ul>
+    <!-- [SHOPPING LIST] -->
+    <h1 class="display-4">Shopping List</h1>
+
+    <!-- [ADD NEW ITEM] -->
+    <p class="lead">Add Items to Your Shopping List</p>
+    <div class="form-group example">
+      <form id="shop-add">
+        <input type="text" id="add-item" placeholder="New Item" required value="" />
+        <button type="submit" value="Add Item" class="btn btn-primary">Save</button>
+        <!-- <input type="submit" value="Add Item" /> -->
+
+      </form>
+    </div>
+
+    <div id="shop-list"></div>
+  </div>
 </body>
+<div class="fixed-footer fixed-bottom">
+  <div class="container">Copyright &copy; 2020 Recipe Rolodex</div>
+</div>
 
 </html>

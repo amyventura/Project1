@@ -11,5 +11,22 @@ $(".overlay-div").mouseout( function(){
     $(this.parentNode.querySelector("img")).removeClass("navigation-hover");
 })
 
-console.log($(".card-img-overlay"))
+$(".youtube-search").on("click", function (){
+    window.location.href = 'video_page.html';
+})
+
+$(".shopping-list").on("click", function (){
+    window.location.href = 'shopping_list.html';
+})
+
+$(".favorite-recipe-list").on("click", function (){
+    // window.location.href = '';
+})
+
+
+$(".recipe-search").on("click", function (){
+    window.location.href = 'search_recipes.html';
+})
+
+
 

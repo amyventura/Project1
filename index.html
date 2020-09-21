@@ -13,32 +13,37 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
         </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
+    </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Recipe Rolodex</title>
 </head>
 
 <body>
     <div class="container">
+        <a href="/index.html" class="home-button fa fa-home"></a>
         <ul class="nav nav-tabs justify-content-end">
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                     aria-expanded="false">Dropdown</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Recipe Search</a>
-                    <a class="dropdown-item" href="#">Recipe Video Search</a>
+                    <a class="dropdown-item" href="/search_recipes.html">Recipe Search</a>
+                    <a class="dropdown-item" href="/video_page.html">Recipe Video Search</a>
                     <a class="dropdown-item" href="#">Favorite Recipes</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Shopping List</a>
+                    <a class="dropdown-item" href="/shopping_list.html">Shopping List</a>
                 </div>
             </li>
 
@@ -54,7 +59,7 @@
         <div class="row equal">
             <div class="col-md-6 col-lg-6">
                 <div class="navagation-button card bg-dark text-white ">
-                    <div class="overlay-div"></div>
+                    <div class="overlay-div recipe-search"></div>
                     <img class="card-img food5" src="./src/food1.jpg" alt="Card image">
                     <div class="card-img-overlay">
                         <h5 class="card-title">Search Recipes</h5>
@@ -66,10 +71,10 @@
             </div>
             <div class="col-md-6 col-lg-6">
                 <div class="navagation-button card bg-dark text-white">
-                    <div class="overlay-div"></div>
+                    <div class="overlay-div favorite-recipe-list"></div>
                     <img class="card-img food6" src="./src/food2.jpg" alt="Card image">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Favorite Recipes</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                         <p class="card-text">Last updated 3 mins ago</p>
@@ -80,10 +85,10 @@
         <div class="row equal">
             <div class="col-md-6 col-lg-6">
                 <div class="navagation-button card bg-dark text-white">
-                    <div class="overlay-div"></div>
+                    <div class="overlay-div shopping-list"></div>
                     <img class="card-img food7" src="./src/food3.jpg" alt="Card image">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Shopping List</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                         <p class="card-text">Last updated 3 mins ago</p>
@@ -92,10 +97,10 @@
             </div>
             <div class="col-md-6 col-lg-6">
                 <div class="navagation-button card bg-dark text-white">
-                    <div class="overlay-div"></div>
+                    <div class="overlay-div youtube-search"></div>
                     <img class="card-img food8" src="./src/food5.jpeg" alt="Card image">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Recipe Youtube Video Search</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                         <p class="card-text">Last updated 3 mins ago</p>
@@ -104,7 +109,7 @@
             </div>
         </div>
 
-        <div class="fixed-footer">
+        <div class="fixed-footer fixed-buttom">
             <div class="container">Copyright &copy; 2020 Recipe Rolodex</div>
         </div>
 

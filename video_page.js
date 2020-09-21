@@ -1,13 +1,34 @@
 $(document).ready(function() {
-    $("#search-video").on("click", function(){
+    var key = "AIzaSyA2X4QilQ_d2coYybKeY9JmB3_P8Hp3UOE";
+    var video = "";
+
+
+    $("form").submit(function(event) {
         event.preventDefault();
 
-        // Here we grab the text from the input box
-        var video = $("#video-input").val();
+        var search = $("#search").val();
 
-        // Here we construct our URL
-        var queryURL = "https://www.youtube.com/embed?listType=search&list=" + video + "&appid=acf348ebcd0d43c83beaf5c573f26468"; 
-
-        console.log(queryURL)
+        videoSearch(key, search, 10);
     })
+
+    function videoSearch(key, search, maxResults) {
+
+        $("#videos").empty();
+
+        $.ajax({
+            url: "https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=" + maxResults + "&q=" + search,
+            method: "GET",
+        }).then(function(response) {
+            console.log(response);
+            // for (i = 0; i < response.items.length; i++){
+            response.items.forEach(item => {
+                video = `
+                    <iframe width="420" height="315" src="http://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowFullScreen></iframe>
+                `
+                $("#videos").append(video);
+                }
+            )
+        })
+    }
+    
 });
