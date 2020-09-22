@@ -56,6 +56,9 @@ body {
 
 .resultrecipe {
   color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: x-large;
 }
 
 h1 {
@@ -167,11 +170,39 @@ img {
   padding: 12px 16px; /* Some padding */
   font-size: 16px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
+
   margin-top: 20px;
   
+
+  margin-left: 1%;
+
 }
 
 /* Lighter background on mouse-over */
 .home-button:hover {
+
   background-color: rgb(211, 185, 102);
+
+}
+
+.searchrec{
+  padding: 10px;
+}
+.card-title{
+  font-family: 'Roboto', sans-serif;
+}
+.recipeinstructions{
+  margin-top: 1rem;
+}
+.links{
+padding: 0px;
+padding-bottom: 1rem;
+}
+.recipe-search-results{
+  padding-bottom: 10px;
+  margin: 1rem;
+}
+.searchbody{
+  padding: 0px;
+
 }

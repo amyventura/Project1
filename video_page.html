@@ -29,10 +29,10 @@
 
 <body>
     <div class="container">
-        
-        <a href="/index.html" class="home-button fa fa-home"></a>
-        <ul class="nav nav-tabs justify-content-end">
 
+
+        <ul class="nav nav-tabs justify-content-end">
+            <a href="/index.html" class="home-button fa fa-home mr-auto"></a>
             <li class="nav-item dropdown">
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,33 +48,34 @@
             </li>
         </ul>
 
-        <div class="container search-div">
-            <div class="container">
-                <h1 class="display-4 text-center">Recipe Video Search</h1>
-                <p class="lead">Search for Recipe Videos!</p>
-                <form id="videoSearch" style="text-align: center;">
-                    <div class="form-group example">
+        
+        <div class="container">
+            <h1 class="display-4 text-center">Recipe Video Search</h1>
+            <p class="lead">Search for Recipe Videos!</p>
+            <form id="videoSearch" style="text-align: center;">
+                <div class="form-group example">
 
-                        <input type="text" id="search" placeholder="Search.." class="form-control">
+                    <input type="text" id="search" placeholder="Search.." class="form-control">
 
-                        <button type="submit"><i class="fa fa-search recipe-search-button"></i></button>
-                        <!-- <input id="search" class="btn btn-primary" type="submit" value="Search"> -->
-                    </div>
-                </form>
-                <!-- Ajax response search video print here -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="videos">
-                        </div>
-                    </div>
+                    <button type="submit"><i class="fa fa-search recipe-search-button"></i></button>
+                    
                 </div>
-
-                <!-- footer -->
-                <div class="fixed-footer fixed-bottom">
-                    <div class="container">Copyright &copy; 2020 Recipe Rolodex</div>
+            </form>
+            
+            <!-- Ajax response search video print here -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="videos">
+                    </div>
                 </div>
             </div>
+
+            <!-- footer -->
+            <div class="fixed-footer fixed-bottom">
+                <div class="container">Copyright &copy; 2020 Recipe Rolodex</div>
+            </div>
         </div>
+    </div>
     </div>
 
 
