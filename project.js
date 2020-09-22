@@ -20,7 +20,7 @@ $(".shopping-list").on("click", function (){
 })
 
 $(".favorite-recipe-list").on("click", function (){
-    // window.location.href = '';
+     window.location.href = 'fav_recipes.html';
 })
 
 

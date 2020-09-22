@@ -66,7 +66,10 @@ function searchRecipe(recipe) {
             var recipeLink = ($("<a href = '" + response.meals[recipes].strSource + "'" + "class = 'card-link recipesource'>" + "Link to Recipe" + "</a>"))
             var recipeVideo = ($("<a href = '" + response.meals[recipes].strYoutube + "'" + "class = 'card-link recipesource'>" + "Recipe Video" + "</a>"))
 
-            var saveBtn = ($("<button type='button' class = 'card-text recipevideo'>" + "Save Recipe to Favorites" + "</button>"))
+            var saveBtn = ($("<button type='button' class='card-text favorite-recipe-button'>" + "Save Recipe to Favorites" + "</button>"))
+            saveBtn.on("click", function (e){
+                console.log(response.meals[recipes])
+            })
             
             cardLinks.append(recipeLink).append(recipeVideo)
             cardBody.append(recipeInstructions).append(cardLinks).append(saveBtn)
