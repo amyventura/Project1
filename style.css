@@ -84,8 +84,48 @@ p.lead {
 
 }
 
+.btn {
+  position: relative;
+  background-color: rgb(179, 118, 77); /*  background */
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(211, 185, 102);
+}
+
 .navagation-button {
   position: relative;
+  background-color: rgb(179, 118, 77); /*  background */
+}
+
+.card-title{
+  height: auto;
+  width: auto;
+  position: relative;
+  border: 3px; 
+  text-align: center;
+  margin: 10px;
+  padding: 2%;
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgb(179, 118, 77, 0.8); /*  background */
+  color: white;
+  
+
+}
+
+.card-text{
+  height: auto;
+  width: auto;
+  position: relative;
+  padding: 2%;
+  text-align: center;
+  margin: 10;
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgb(83, 49, 67, 0.8); /*  background */
+  color: white;
+  
+
 }
 
 
@@ -121,16 +161,17 @@ img {
   text-align: center;
 }
 .home-button{
-  background-color: DodgerBlue; /* Blue background */
+  background-color: rgb(179, 118, 77); /*  background */
   border: none; /* Remove borders */
   color: white; /* White text */
   padding: 12px 16px; /* Some padding */
   font-size: 16px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
   margin-top: 20px;
+  
 }
 
-/* Darker background on mouse-over */
+/* Lighter background on mouse-over */
 .home-button:hover {
-  background-color: RoyalBlue;
+  background-color: rgb(211, 185, 102);
 }
