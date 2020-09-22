@@ -12,7 +12,7 @@
     <!-- bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
@@ -21,23 +21,25 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Recipe Rolodex</title>
 </head>
 
 <body>
-    <div class="container">
-        <a href="/index.html" class="home-button fa fa-home"></a>
-        <ul class="nav nav-tabs justify-content-end">
+    <div class="my-flex-wrapper">
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">Dropdown</a>
+        <ul class="topbar">
+            <a href="/index.html" class="home-button fa fa-home mr-auto"></a>
+            <li class="maindrop dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menu
+                </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="/search_recipes.html">Recipe Search</a>
                     <a class="dropdown-item" href="/video_page.html">Recipe Video Search</a>
@@ -50,8 +52,8 @@
 
         </ul>
         <!-- <div class="container"> -->
-            <h1 class="display-4">Recipe Rolodex</h1>
-            <p class="lead">Welcome to your one stop shop for tons of recipes! </p>
+        <h1 class="display-4">Recipe Rolodex</h1>
+        <p class="lead">Welcome to your one stop shop for tons of recipes! </p>
         <!-- </div> -->
     </div>
 
@@ -63,9 +65,8 @@
                     <img class="card-img food5" src="./src/food1.jpg" alt="Card image">
                     <div class="card-img-overlay">
                         <h5 class="card-title">Search Recipes</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+                       
+                        
                     </div>
                 </div>
             </div>
@@ -75,9 +76,8 @@
                     <img class="card-img food6" src="./src/food2.jpg" alt="Card image">
                     <div class="card-img-overlay">
                         <h5 class="card-title">Favorite Recipes</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+                   
+                        
                     </div>
                 </div>
             </div>
@@ -89,9 +89,8 @@
                     <img class="card-img food7" src="./src/food3.jpg" alt="Card image">
                     <div class="card-img-overlay">
                         <h5 class="card-title">Shopping List</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -101,9 +100,8 @@
                     <img class="card-img food8" src="./src/food5.jpeg" alt="Card image">
                     <div class="card-img-overlay">
                         <h5 class="card-title">Recipe Youtube Video Search</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+                       
+                        
                     </div>
                 </div>
             </div>
@@ -114,7 +112,7 @@
         </div>
 
     </div>
-   <script src="project.js"></script>
+    <script src="project.js"></script>
 
 
 
