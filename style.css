@@ -56,6 +56,9 @@ body {
 
 .resultrecipe {
   color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: x-large;
 }
 
 h1 {
@@ -133,4 +136,25 @@ img {
 /* Darker background on mouse-over */
 .home-button:hover {
   background-color: RoyalBlue;
+}
+
+.searchrec{
+  padding: 10px;
+}
+.card-title{
+  font-family: 'Roboto', sans-serif;
+}
+.recipeinstructions{
+  margin-top: 1rem;
+}
+.links{
+padding: 0px;
+padding-bottom: 1rem;
+}
+.recipe-search-results{
+  padding-bottom: 10px;
+  margin: 1rem;
+}
+.searchbody{
+  padding: 0px;
 }
