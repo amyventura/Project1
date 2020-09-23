@@ -122,3 +122,15 @@ window.addEventListener("load", function () {
   shopper.load();
   document.getElementById("shop-add").addEventListener("submit", shopper.add);
 });
+
+// click on the star
+//favRecipes =[]
+//recipeObj = {
+//   id:id,
+//   name: name,
+//   url: url,
+//   fav: true
+// }
+// push the recipes object to the favRecipes
+// store the favRecipes in the local storage
+// try fetching the favRecipes data from the local storage and display them on the screen 
