@@ -2,35 +2,44 @@
 //my array values for keys that start with recipe
 // have exactly 5 digits after recipe 
 $(document).ready(function () {
-function myParser(recipeKey){
+    function myParser(recipeKey) {
 
-    if (recipeKey.length==11 && !isNaN(recipeKey.substr(6,5))&& recipeKey.substr(0,6)=="recipe"){
-      return true
-    }return false
-}
-var myFavoriteRecipes=[]; 
-var myKeys = Object.keys({...localStorage});
-console.log(myKeys)
-    function allStorage() { 
-        var i=myKeys.length
-        while ( i-- ) {
-            if (myParser(myKeys[i])){
-                myFavoriteRecipes.push( localStorage.getItem(myKeys[i]) );
+        if (recipeKey.length == 11 && !isNaN(recipeKey.substr(6, 5)) && recipeKey.substr(0, 6) == "recipe") {
+            return true
+        }
+        return false
+    }
+
+    var myFavoriteRecipes = [];
+    var myKeys = Object.keys({
+        ...localStorage
+    });
+    console.log(myKeys)
+
+    function allStorage() {
+        var i = myKeys.length
+        while (i--) {
+            if (myParser(myKeys[i])) {
+                myFavoriteRecipes.push(localStorage.getItem(myKeys[i]));
             }
-        console.log(i)  
+            console.log(i)
         }
     }
 
 
     function showRecipe(initialRecipes) {
-        $(".recipe-search-results").empty()
-        var response= JSON.parse(initialRecipes)
+        console.log(initialRecipes.length)
 
-            var cardBody = ($("<div class='card searchrec' id ='recipecard'><div class='card-body searchbody'> </div></div>"));
+        for (var i = 0; i < initialRecipes.length; i++) {
+            $(".recipe-search-results").empty()
+
+            var response = JSON.parse(initialRecipes[i])
             
-            var recipeTitle = ($("<div class = 'card-title resultrecipe'>" + "<b>" +response.strMeal +"</b>" +"</div>"))
+            var cardBody = ($("<div class='card searchrec' id ='recipecard'><div class='card-body searchbody'> </div></div>"));
 
-            var recipeIngTitle = ($("<ul class='list-group list-group-flush;'>" +"<b>" +"Ingredients" + "</b>" +"</ul>"))
+            var recipeTitle = ($("<div class = 'card-title resultrecipe'>" + "<b>" + response.strMeal + "</b>" + "</div>"))
+
+            var recipeIngTitle = ($("<ul class='list-group list-group-flush;'>" + "<b>" + "Ingredients" + "</b>" + "</ul>"))
 
             cardBody.append(recipeTitle)
             cardBody.append(recipeIngTitle)
@@ -52,10 +61,10 @@ console.log(myKeys)
 
             console.log(ingredients)
 
-            for (var [eachingredient, eachquantity] of array){
-                recipeIngTitle.append($("<li class='list-group-item'>" +"<b>" +eachingredient + "</b>" +" - " + eachquantity + "</li>"))
+            for (var [eachingredient, eachquantity] of array) {
+                recipeIngTitle.append($("<li class='list-group-item'>" + "<b>" + eachingredient + "</b>" + " - " + eachquantity + "</li>"))
             }
-            var recipeInstructions = ($("<p class = 'card-text recipeinstructions'>" +"<b>" +"Recipe Instructions : " + "</b>"+response.strInstructions + "</div>"))
+            var recipeInstructions = ($("<p class = 'card-text recipeinstructions'>" + "<b>" + "Recipe Instructions : " + "</b>" + response.strInstructions + "</div>"))
 
             var cardLinks = $("<div class='card-body links'>" + "</div>")
             var recipeLink = ($("<a href = '" + response.strSource + "'" + "class = 'card-link recipesource'>" + "Link to Recipe" + "</a>"))
@@ -65,10 +74,10 @@ console.log(myKeys)
             $(".favorite-recipes").append(cardBody)
         };
 
-    // }
+    }
 
 
-   
+
     allStorage()
     showRecipe(myFavoriteRecipes);
 
