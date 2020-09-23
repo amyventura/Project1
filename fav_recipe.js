@@ -20,18 +20,15 @@ console.log(myKeys)
         console.log(i)  
         }
     }
+
+
     function showRecipe(initialRecipes) {
         $(".recipe-search-results").empty()
-        var response=initialRecipes
+        var response= JSON.parse(initialRecipes)
 
-        for (recipeIndex in response) {
-            
-            console.log(response)
-            console.log(recipeIndex)
-            // console.log(response[recipes])
             var cardBody = ($("<div class='card searchrec' id ='recipecard'><div class='card-body searchbody'> </div></div>"));
             
-            var recipeTitle = ($("<div class = 'card-title resultrecipe'>" + "<b>" +response[recipeIndex].strMeal +"</b>" +"</div>"))
+            var recipeTitle = ($("<div class = 'card-title resultrecipe'>" + "<b>" +response.strMeal +"</b>" +"</div>"))
 
             var recipeIngTitle = ($("<ul class='list-group list-group-flush;'>" +"<b>" +"Ingredients" + "</b>" +"</ul>"))
 
@@ -45,31 +42,34 @@ console.log(myKeys)
                 var ingredient = ("strIngredient" + [j])
                 var measure = ("strMeasure" + [j])
 
-                if (response[recipeIndex][ingredient] != "") {
-                    ingredients[response[recipeIndex][ingredient]] = response[recipeIndex][measure]
+                if (response[ingredient] != "") {
+                    console.log("hi")
+                    ingredients[response[ingredient]] = response[measure]
                 }
 
             }
             var array = Object.entries(ingredients)
 
+            console.log(ingredients)
+
             for (var [eachingredient, eachquantity] of array){
-                console.log(eachingredient + "and" + eachquantity)
                 recipeIngTitle.append($("<li class='list-group-item'>" +"<b>" +eachingredient + "</b>" +" - " + eachquantity + "</li>"))
             }
-            var recipeInstructions = ($("<p class = 'card-text recipeinstructions'>" +"<b>" +"Recipe Instructions : " + "</b>"+response[recipeIndex].strInstructions + "</div>"))
+            var recipeInstructions = ($("<p class = 'card-text recipeinstructions'>" +"<b>" +"Recipe Instructions : " + "</b>"+response.strInstructions + "</div>"))
 
             var cardLinks = $("<div class='card-body links'>" + "</div>")
-            var recipeLink = ($("<a href = '" + response[recipeIndex].strSource + "'" + "class = 'card-link recipesource'>" + "Link to Recipe" + "</a>"))
-            var recipeVideo = ($("<a href = '" + response[recipeIndex].strYoutube + "'" + "class = 'card-link recipesource'>" + "Recipe Video" + "</a>"))
+            var recipeLink = ($("<a href = '" + response.strSource + "'" + "class = 'card-link recipesource'>" + "Link to Recipe" + "</a>"))
+            var recipeVideo = ($("<a href = '" + response.strYoutube + "'" + "class = 'card-link recipesource'>" + "Recipe Video" + "</a>"))
             cardLinks.append(recipeLink).append(recipeVideo)
             cardBody.append(recipeInstructions).append(cardLinks)
             $(".favorite-recipes").append(cardBody)
         };
 
-    }
+    // }
 
 
    
     allStorage()
     showRecipe(myFavoriteRecipes);
+
 });
