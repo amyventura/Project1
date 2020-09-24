@@ -49,7 +49,6 @@ function searchRecipe(recipe) {
             // const keyValue = (input) => Object.entries(input).forEach(([key,value]) => {
             //     return(key,value)
             //   })
-              
             // console.log(keyValue(ingredients))
             //   cardBody.append($("<p class = card-text recipeingredient>" + "Recipe Ingredients : " +keyValue(ingredients) + "</div>"))
 
@@ -65,10 +64,10 @@ function searchRecipe(recipe) {
 
             var recipeLink = ($("<a href = '" + response.meals[recipes].strSource + "'" + "class = 'card-link recipesource'>" + "Link to Recipe" + "</a>"))
             var recipeVideo = ($("<a href = '" + response.meals[recipes].strYoutube + "'" + "class = 'card-link recipesource'>" + "Recipe Video" + "</a>"))
-         
         
         // This is the recipe Favorites 
             var saveBtn = ($("<button type='button' class='card-text favorite-recipe-button'>" + "Save Recipe to Favorites" + "</button>"))
+            var storageList = []
             saveBtn.on("click", function (e){
                 console.log(response.meals[recipes])
                 localStorage.setItem("recipe"+JSON.parse(response.meals[recipes].idMeal), JSON.stringify(response.meals[recipes]));
