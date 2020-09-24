@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var key = "AIzaSyA3XMhFDm-MWwz9t27dNqBt0yL0oKThOKM";
+    var key = "AIzaSyA-2N_iTiqbNcDh3UJu6Jk6-kBZPRAFBag";
     var video = "";
 
 
