@@ -17,7 +17,7 @@ As avid chefs, our team is frustrated with the plethora of recipe applications a
 
 # Accessing the Application
 
-To access the link application please sure this link : https://sabinehutter.github.io/Project1/
+To access the deployed app, please click this link : http://127.0.0.1:5502/index.html
 
 
 
